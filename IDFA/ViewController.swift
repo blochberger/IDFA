@@ -6,20 +6,32 @@
 //  Copyright © 2017 Universität Hamburg. All rights reserved.
 //
 
+import AdSupport
 import UIKit
 
 class ViewController: UIViewController {
 
+	@IBOutlet weak var adTrackingInfoTextField: UILabel!
+	@IBOutlet weak var idfaTextField: UITextField!
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+
+		refresh()
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
+	@IBAction func refresh() {
+		let identifierManager = ASIdentifierManager()
+		let idfa = identifierManager.advertisingIdentifier
 
+		if identifierManager.isAdvertisingTrackingEnabled {
+			adTrackingInfoTextField.text = "Ad tracking is enabled."
+		} else {
+			adTrackingInfoTextField.text = "Ad tracking is not enabled."
+		}
+
+		idfaTextField.text = idfa?.uuidString
+	}
 
 }
 
