@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func refresh() {
-		let identifierManager = ASIdentifierManager()
+		let identifierManager = ASIdentifierManager.shared()!
 		let idfa = identifierManager.advertisingIdentifier
 
 		if identifierManager.isAdvertisingTrackingEnabled {
