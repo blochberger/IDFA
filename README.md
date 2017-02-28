@@ -19,3 +19,5 @@ You can disable ad tracking (by the means of the IDFA) by enabling "Limit Ad Tra
 **Open questions:**
 
 - Is the IDFA reset, if you restore from backup?
+
+[![IDFA Screenshot](https://github.com/blochberger/IDFA/raw/master/screenshot-thumb.png)][https://github.com/blochberger/IDFA/raw/master/screenshot.png]
