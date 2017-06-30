@@ -14,11 +14,7 @@ You can disable ad tracking (by the means of the IDFA) by enabling "Limit Ad Tra
 - The IDFA is unique per device.
 - The IDFA is the same for all apps on the device.
   *Actually, that is the purpose of the IDFA. Alternatively you can use the [Identifier for Vendors (IDFV)](https://developer.apple.com/reference/uikit/uidevice/1620059-identifierforvendor).*
-- The IDFA is reset if the device is reset (see [Privacy implications of IDFA/IDFV?](http://security.stackexchange.com/a/22720/100009), not tested myself).
-
-**Open questions:**
-
-- Is the IDFA reset, if you restore from backup?
-
+- The IDFA is reset if the device is reset (see [Privacy implications of IDFA/IDFV?](http://security.stackexchange.com/a/22720/100009)).
+- The IDFA is reset if a backup is restored.
 
 ![IDFA Screenshot](https://github.com/blochberger/IDFA/raw/master/screenshot-thumb.png)
