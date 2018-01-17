@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  IDFA
-//
-//  Created by Maximilian Blochberger on 2017-02-28.
-//  Copyright © 2017 Universität Hamburg. All rights reserved.
-//
-
 import AdSupport
 import UIKit
 
@@ -34,4 +26,3 @@ class ViewController: UIViewController {
 	}
 
 }
-
