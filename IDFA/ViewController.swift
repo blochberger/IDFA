@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func refresh() {
-		let identifierManager = ASIdentifierManager.shared()!
+		let identifierManager = ASIdentifierManager.shared()
 		let idfa = identifierManager.advertisingIdentifier
 
 		if identifierManager.isAdvertisingTrackingEnabled {
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 			adTrackingInfoTextField.text = "Ad tracking is not enabled."
 		}
 
-		idfaTextField.text = idfa?.uuidString
+		idfaTextField.text = idfa.uuidString
 	}
 
 }
