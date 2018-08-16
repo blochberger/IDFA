@@ -17,4 +17,4 @@ You can disable ad tracking (by the means of the IDFA) by enabling "Limit Ad Tra
 - The IDFA is reset if the device is reset (see [Privacy implications of IDFA/IDFV?](http://security.stackexchange.com/a/22720/100009)).
 - The IDFA is reset if a backup is restored.
 
-![IDFA Screenshot](https://github.com/blochberger/IDFA/raw/master/screenshot-thumb.png)
+<img src="https://github.com/blochberger/IDFA/raw/master/screenshot.png" height="667px" width="375px" alt="Screenshot"/>
