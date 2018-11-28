@@ -61,7 +61,7 @@ defaults read com.apple.AdLib forceLimitAdTracking
 - The IDFA is the same for all apps on the device.
   *Actually, that is the purpose of the IDFA. Alternatively you can use the [Identifier for Vendors (IDFV)](https://developer.apple.com/reference/uikit/uidevice/1620059-identifierforvendor).*
 
-  - **macOS**: Due to a bug, the IDFA is unique per sandbox container and stored in `~/Library/Containers/<bundleId>/Data/Library/Preferences/com.apple.AdLib.plist`. The actual settings configurable by the user are not respected once a container is created, thus defeating the whole purpose of the IDFA.
+  - **macOS**: Due to a bug, the IDFA is unique per sandbox container and stored in `~/Library/Containers/<bundleId>/Data/Library/Preferences/com.apple.AdLib.plist`. The actual settings configurable by the user are not respected once a container is created, thus defeating the whole purpose of the IDFA. The bug has been filed to Apple ([rdar](rdar://problem/46310193)://[46310193](http://www.openradar.me/radar?id=5055914377740288)).
 
 - The IDFA is reset if the device is reset (see [Privacy implications of IDFA/IDFV?](http://security.stackexchange.com/a/22720/100009)).
 
