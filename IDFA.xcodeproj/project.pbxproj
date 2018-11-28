@@ -12,6 +12,10 @@
 		601DEE6A1E65562000B265CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601DEE681E65562000B265CA /* Main.storyboard */; };
 		601DEE6C1E65562000B265CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601DEE6B1E65562000B265CA /* Assets.xcassets */; };
 		601DEE6F1E65562000B265CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601DEE6D1E65562000B265CA /* LaunchScreen.storyboard */; };
+		60D3232121AEDCC60073FEFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D3232021AEDCC60073FEFA /* AppDelegate.swift */; };
+		60D3232321AEDCC60073FEFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D3232221AEDCC60073FEFA /* ViewController.swift */; };
+		60D3232521AEDCC80073FEFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60D3232421AEDCC80073FEFA /* Assets.xcassets */; };
+		60D3232821AEDCC80073FEFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60D3232621AEDCC80073FEFA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +26,24 @@
 		601DEE6B1E65562000B265CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		601DEE6E1E65562000B265CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		601DEE701E65562000B265CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60D3231E21AEDCC60073FEFA /* IDFA_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDFA_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D3232021AEDCC60073FEFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60D3232221AEDCC60073FEFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60D3232421AEDCC80073FEFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60D3232721AEDCC80073FEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60D3232921AEDCC80073FEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60D3232A21AEDCC80073FEFA /* IDFA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IDFA.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		601DEE5E1E65562000B265CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60D3231B21AEDCC60073FEFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				601DEE631E65562000B265CA /* IDFA_iOS */,
+				60D3231F21AEDCC60073FEFA /* IDFA_macOS */,
 				601DEE621E65562000B265CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				601DEE611E65562000B265CA /* IDFA_iOS.app */,
+				60D3231E21AEDCC60073FEFA /* IDFA_macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +82,19 @@
 				601DEE701E65562000B265CA /* Info.plist */,
 			);
 			path = IDFA_iOS;
+			sourceTree = "<group>";
+		};
+		60D3231F21AEDCC60073FEFA /* IDFA_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				60D3232021AEDCC60073FEFA /* AppDelegate.swift */,
+				60D3232221AEDCC60073FEFA /* ViewController.swift */,
+				60D3232421AEDCC80073FEFA /* Assets.xcassets */,
+				60D3232621AEDCC80073FEFA /* Main.storyboard */,
+				60D3232921AEDCC80073FEFA /* Info.plist */,
+				60D3232A21AEDCC80073FEFA /* IDFA.entitlements */,
+			);
+			path = IDFA_macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,13 +117,30 @@
 			productReference = 601DEE611E65562000B265CA /* IDFA_iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		60D3231D21AEDCC60073FEFA /* IDFA_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60D3232B21AEDCC80073FEFA /* Build configuration list for PBXNativeTarget "IDFA_macOS" */;
+			buildPhases = (
+				60D3231A21AEDCC60073FEFA /* Sources */,
+				60D3231B21AEDCC60073FEFA /* Frameworks */,
+				60D3231C21AEDCC60073FEFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IDFA_macOS;
+			productName = IDFA;
+			productReference = 60D3231E21AEDCC60073FEFA /* IDFA_macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		601DEE591E65561F00B265CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Universität Hamburg";
 				TargetAttributes = {
@@ -98,6 +148,15 @@
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
+					};
+					60D3231D21AEDCC60073FEFA = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -115,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				601DEE601E65562000B265CA /* IDFA_iOS */,
+				60D3231D21AEDCC60073FEFA /* IDFA_macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +190,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60D3231C21AEDCC60073FEFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D3232521AEDCC80073FEFA /* Assets.xcassets in Resources */,
+				60D3232821AEDCC80073FEFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,6 +208,15 @@
 			files = (
 				601DEE671E65562000B265CA /* ViewController.swift in Sources */,
 				601DEE651E65562000B265CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60D3231A21AEDCC60073FEFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D3232321AEDCC60073FEFA /* ViewController.swift in Sources */,
+				60D3232121AEDCC60073FEFA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +237,14 @@
 				601DEE6E1E65562000B265CA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		60D3232621AEDCC80073FEFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60D3232721AEDCC80073FEFA /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -295,6 +381,55 @@
 			};
 			name = Release;
 		};
+		60D3232C21AEDCC80073FEFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = IDFA_macOS/IDFA.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IDFA_macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.IDFA.macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		60D3232D21AEDCC80073FEFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = IDFA_macOS/IDFA.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IDFA_macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.IDFA.macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -312,6 +447,15 @@
 			buildConfigurations = (
 				601DEE741E65562000B265CA /* Debug */,
 				601DEE751E65562000B265CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60D3232B21AEDCC80073FEFA /* Build configuration list for PBXNativeTarget "IDFA_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60D3232C21AEDCC80073FEFA /* Debug */,
+				60D3232D21AEDCC80073FEFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
