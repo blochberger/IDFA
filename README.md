@@ -14,7 +14,21 @@ You can disable ad tracking (by the means of the IDFA) by enabling "Limit Ad Tra
   defaults write com.apple.AdLib AD_DEVICE_IDFA -string '00000000-0000-0000-0000-000000000000'
   ```
 
-**Facts:**
+## Terminal (macOS)
+
+The IDFA can be obtained via Terminal on macOS with the following command
+
+```sh
+defaults read com.apple.AdLib AD_DEVICE_IDFA
+```
+
+To check whether Ad tracking is enabled, use the following command
+
+```sh
+defaults read com.apple.AdLib forceLimitAdTracking
+```
+
+## Facts
 
 - "Limit Ad Tracking" is disabled by default, meaning tracking is enabled by default (Opt-out).
   *Yes, the formulation is a bit misleading.*
