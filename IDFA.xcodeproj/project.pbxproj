@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		601DEE611E65562000B265CA /* IDFA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDFA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		601DEE611E65562000B265CA /* IDFA_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDFA_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		601DEE641E65562000B265CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		601DEE661E65562000B265CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		601DEE691E65562000B265CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		601DEE581E65561F00B265CA = {
 			isa = PBXGroup;
 			children = (
-				601DEE631E65562000B265CA /* IDFA */,
+				601DEE631E65562000B265CA /* IDFA_iOS */,
 				601DEE621E65562000B265CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		601DEE621E65562000B265CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				601DEE611E65562000B265CA /* IDFA.app */,
+				601DEE611E65562000B265CA /* IDFA_iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		601DEE631E65562000B265CA /* IDFA */ = {
+		601DEE631E65562000B265CA /* IDFA_iOS */ = {
 			isa = PBXGroup;
 			children = (
 				601DEE641E65562000B265CA /* AppDelegate.swift */,
@@ -61,15 +61,15 @@
 				601DEE6D1E65562000B265CA /* LaunchScreen.storyboard */,
 				601DEE701E65562000B265CA /* Info.plist */,
 			);
-			path = IDFA;
+			path = IDFA_iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		601DEE601E65562000B265CA /* IDFA */ = {
+		601DEE601E65562000B265CA /* IDFA_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 601DEE731E65562000B265CA /* Build configuration list for PBXNativeTarget "IDFA" */;
+			buildConfigurationList = 601DEE731E65562000B265CA /* Build configuration list for PBXNativeTarget "IDFA_iOS" */;
 			buildPhases = (
 				601DEE5D1E65562000B265CA /* Sources */,
 				601DEE5E1E65562000B265CA /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = IDFA;
+			name = IDFA_iOS;
 			productName = IDFA;
-			productReference = 601DEE611E65562000B265CA /* IDFA.app */;
+			productReference = 601DEE611E65562000B265CA /* IDFA_iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				601DEE601E65562000B265CA /* IDFA */,
+				601DEE601E65562000B265CA /* IDFA_iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -277,9 +277,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = IDFA/Info.plist;
+				INFOPLIST_FILE = IDFA_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.IDFA";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.IDFA.iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -288,9 +288,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = IDFA/Info.plist;
+				INFOPLIST_FILE = IDFA_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.IDFA";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.IDFA.iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -307,7 +307,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		601DEE731E65562000B265CA /* Build configuration list for PBXNativeTarget "IDFA" */ = {
+		601DEE731E65562000B265CA /* Build configuration list for PBXNativeTarget "IDFA_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				601DEE741E65562000B265CA /* Debug */,
