@@ -70,3 +70,7 @@ defaults read com.apple.AdLib forceLimitAdTracking
 - The [`ASIdentifierManager.clearAdvertisingIdentifier()`](https://developer.apple.com/documentation/adsupport/asidentifiermanager/2998811-clearadvertisingidentifier) function creates a new IDFA for the current sandbox container.
 
 <img src="https://github.com/blochberger/IDFA/raw/master/screenshot.png" width="592px" height="250px" alt="Screenshot"/>
+
+## References
+
+- S. Egelman, [**Ad IDs Behaving Badly**](https://blog.appcensus.mobi/2019/02/14/ad-ids-behaving-badly/), Feb. 2019
