@@ -141,16 +141,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Universität Hamburg";
 				TargetAttributes = {
 					601DEE601E65562000B265CA = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					60D3231D21AEDCC60073FEFA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -162,7 +163,7 @@
 			};
 			buildConfigurationList = 601DEE5C1E65561F00B265CA /* Build configuration list for PBXProject "IDFA" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -254,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -312,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -367,6 +370,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.IDFA.iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -378,6 +382,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.IDFA.iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -402,7 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.IDFA.macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -426,7 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.IDFA.macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
