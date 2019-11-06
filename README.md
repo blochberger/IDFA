@@ -74,3 +74,4 @@ defaults read com.apple.AdLib forceLimitAdTracking
 ## References
 
 - S. Egelman, [**Ad IDs Behaving Badly**](https://blog.appcensus.mobi/2019/02/14/ad-ids-behaving-badly/), Feb. 2019
+- @mattt, [Device Identifiers and Fingerprinting on iOS](https://nshipster.com/device-identifiers/), Oct. 2019
